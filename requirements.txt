@@ -1,12 +1,16 @@
-# backend/requirements.txt
 fastapi==0.110.0
 uvicorn[standard]==0.29.0
 pydantic==2.5.3
+typing-extensions==4.8.0
 
 deepface
+# Fijar TensorFlow explícitamente a la versión que detectó el error o una compatible
+tensorflow==2.17.1
+# ¡Añadir la dependencia que falta!
+tf-keras
+
 supabase>=2.0.0
 python-multipart>=0.0.6
 opencv-python-headless==4.8.0.76
-numpy>=1.23.0,<1.25.0
+numpy>=1.23.0,<1.25.0 # Mantener NumPy restringido
 python-dotenv>=1.0.0
-typing-extensions==4.8.0 # Añadir por si Pydantic 2.5.3 lo necesita explícitamente
