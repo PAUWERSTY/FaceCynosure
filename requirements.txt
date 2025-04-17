@@ -1,8 +1,18 @@
-fastapi==0.110.1
-uvicorn[standard]==0.29.0
-python-dotenv==1.0.1
-supabase==1.2.0
-deepface==0.0.86
-opencv-python-headless==4.9.0.80
-numpy==1.26.4
-pydantic==1.10.15
+# Fijar versiones que son generalmente compatibles entre sí y con Pydantic v2
+fastapi==0.110.0  # Una versión reciente estable
+uvicorn[standard]==0.29.0 # Versión compatible con FastAPI
+pydantic==2.5.3 # Una versión estable de Pydantic v2 (puedes probar otras si esta falla)
+
+# Dependencias del proyecto
+deepface # Dejar que pip resuelva las dependencias de DeepFace (TensorFlow, etc.)
+supabase>=2.0.0 # Mantener Supabase actualizado
+python-multipart>=0.0.6
+opencv-python-headless==4.8.0.76 # Mantener OpenCV fijo
+numpy>=1.23.0,<1.25.0 # Restringir Numpy un poco más por si acaso
+python-dotenv>=1.0.0
+
+# Consideraciones Adicionales (Si lo anterior falla):
+# - Podrías necesitar fijar 'typing-extensions' si Pydantic se queja:
+#   typing-extensions==4.8.0
+# - Si DeepFace sigue dando problemas, podrías fijar TensorFlow:
+#   tensorflow==2.13.* # (o una versión compatible con tu sistema/CPU)
