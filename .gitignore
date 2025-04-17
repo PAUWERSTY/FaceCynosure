@@ -1,0 +1,25 @@
+# Node.js
+node_modules/
+.env
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pdb
+*.egg-info/
+*.egg
+.env  # por si usas entornos virtuales de Python también
+
+# VS Code (opcional)
+.vscode/
+
+# Entornos virtuales (si usas venv o similar)
+venv/
+env/
+.venv/
