@@ -3,6 +3,6 @@ uvicorn[standard]==0.29.0
 python-dotenv==1.0.1
 supabase==1.2.0
 deepface==0.0.86
-opencv-python==4.9.0.80
+opencv-python-headless==4.9.0.80
 numpy==1.26.4
-pydantic==1.10.15  # se puede migrar a v2 si quieres, pero v1.10.15 es más estable con FastAPI actual
+pydantic==1.10.15
