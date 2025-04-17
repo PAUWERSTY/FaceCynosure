@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+deepface
+supabase-py
+python-multipart
+opencv-python-headless
+numpy
+python-dotenv
